@@ -795,7 +795,7 @@ select {
 
 .section--hero {
   padding: 200px 0;
-  background: url("../../assets/images/background-hero.png");
+  background-image: url("../../assets/images/background-hero.png");
 }
 @media (max-width: 991px) {
   .section--hero {
@@ -809,7 +809,7 @@ select {
 }
 
 .section__bg--subscribe {
-  background: url("../../assets/images/background-hero.png");
+  background-image: url("../../assets/images/background-hero.png");
   padding: 106px 0;
 }
 @media (max-width: 991px) {
