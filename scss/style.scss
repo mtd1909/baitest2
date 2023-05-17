@@ -1,0 +1,47 @@
+// Abstracts
+@import './abstracts/_variables.scss';
+
+//Base
+@import './base/_reset.scss';
+@import './base/_normalize.scss';
+
+//Components
+@import './components/_button.scss';
+@import './components/_blogBoxLarge.scss';
+@import './components/_blogBoxSmall.scss';
+@import './components/_commentsBox.scss';
+@import './components/_footer.scss';
+@import './components/_header.scss';
+@import './components/_postBox.scss';
+@import './components/_similarProduct.scss';
+@import './components/_projectBox.scss';
+@import './components/_recommendPostBox.scss';
+@import './components/_rightBlogPage.scss';
+@import './components/_cardBox.scss';
+@import './components/_section.scss';
+@import './components/_titleBox.scss';
+@import './components/_decorBox.scss';
+@import './components/_iconBox.scss';
+@import './components/_textSecondary.scss';
+@import './components/_slideBox.scss';
+@import './components/_imageHomeBox.scss';
+@import './components/_toggleSwitch.scss';
+@import './components/_priceBox.scss';
+@import './components/_testimonialBox.scss';
+@import './components/_breadCrumb.scss';
+@import './components/_star.scss';
+@import './components/_input.scss';
+@import './components/_pagination.scss';
+@import './components/_portfolioDate.scss';
+
+//Layout
+@import './layout/_grid.scss';
+
+//Utils 
+@import './utils/_utils.scss';
+
+//Pages
+@import './pages/_home.scss';
+@import './pages/_shop.scss';
+@import './pages/_blog.scss';
+@import './pages/_portfolio.scss';

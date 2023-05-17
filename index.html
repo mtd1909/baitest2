@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link rel="stylesheet" href="https://redpervn.github.io/fa/css/all.min.css?fbclid=IwAR2VnCVu3fZyZybhEPHqAoRF9xJd2ZJZ43gCLfQokvfv6X5YJv1_V3HNSyw">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- css  -->
+    <link rel="stylesheet" href="./scss/style.css">
+    <title>Test Frontend bài 2</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header--wrap">
+          <div class="logo">
+            <img src="assets/images/Logo.png" alt="logo">
+          </div>
+          <div class="header__bars">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <ul class="nav nav-desktop">
+            <li class="nav__item">
+              <a class="active" href="index.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="shop.html">Pages</a>
+            </li>
+            <li class="nav__item">
+              <a href="blog.html">Blog</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+          <div class="header__right">
+            <ul class="nav nav-mobile">
+              <li class="nav__item">
+                <a class="active" href="index.html">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#">Services</a>
+              </li>
+              <li class="nav__item">
+                <a href="#">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="shop.html">Pages</a>
+              </li>
+              <li class="nav__item">
+                <a href="blog.html">Blog</a>
+              </li>
+              <li class="nav__item">
+                <a href="#">Contact</a>
+              </li>
+            </ul>
+            <div class="header__right--icon">
+              <img src="assets/images/Search.svg" alt="search icon">
+            </div>
+            <div class="header__right--icon cart">
+              <img src="assets/images/Bag 2.svg" alt="bag icon">
+            </div>
+            <div class="button button--secondary">
+              Sign up
+            </div>
+          </div>
+        </div>
+        <div class="header__overlay"></div>
+      </div>
+    </header>
+    <div class="main">
+      <section class="section section--home">
+        <div class="container">
+          <div class="title--box small title--box__purple mb-70">
+            <h1 class="title">
+              Everything we do to make <span>work better.</span>
+            </h1>
+            <div class="subtitle">
+              Find the right space, services, and support, so your business and its people can work their way, every day.
+            </div>
+          </div>
+          <div class="hero">
+            <button class="button button--primary">Book Now</button>
+            <div class="hero__play">
+              <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="hero__text">How it works</div>
+          </div>
+        </div>
+        <div class="decor--box decor1 decor--box__bottom-right" style="--size: 80px; position: absolute; --color: var(--purple);">
+          <div class="decor--box__img yellow" style="border-radius: 50% 50% 0 50%;">
+            <img src="./assets/images/hero1.png" alt="hero decor">
+          </div>
+        </div>
+        <div class="decor--box decor2 decor--box__bottom-left" style="--size: 60px; position: absolute; --color: var(--turquoise);">
+          <div class="decor--box__img blue" style="border-radius: 50% 50% 50% 0;">
+            <img src="./assets/images/hero2.png" alt="hero decor">
+          </div>
+        </div>
+        <div class="decor--box decor3 decor--box__bottom-left" style="--size: 70px; position: absolute; --color: var(--blue);">
+          <div class="decor--box__img turquoise" style="border-radius: 50% 50% 50% 0;">
+            <img src="./assets/images/hero3.png" alt="hero decor">
+          </div>
+        </div>
+        <div class="decor--box decor4 decor--box__bottom-right" style="--size: 60px; position: absolute; --color: var(--pink);">
+          <div class="decor--box__img purple" style="border-radius: 50% 50% 0 50%;">
+            <img src="./assets/images/hero4.png" alt="hero decor">
+          </div>
+        </div>
+        <div class="section__bg section__bg--full section__bg--light-alt"></div>
+      </section>
+      <section class="section pt-120 pb-60">
+        <div class="container">
+          <div class="title--box large mb-80">
+            <h2 class="title">
+              From a single desk to a whole building. The choice is yours.
+            </h2>
+            <div class="subtitle">
+              We provide office space that’s flexible to your needs and fully customisable.
+            </div>
+          </div>
+          <div class="decor--box decor--box__bottom-right mb-70">
+            <div class="row">
+              <div class="col-xl-4 col-md-6 col-xs-12">
+                <div class="card--box">
+                  <div class="icon--box purple--light">
+                    <img src="assets/images/card-icon1.svg" alt="card icon">
+                  </div>
+                  <h5 class="card--box__title">Private Office</h5>
+                  <div class="card--box__text">Our coworking spaces are designed with collaboration in mind.</div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-xs-12">
+                <div class="card--box active">
+                  <div class="icon--box blue--light">
+                    <img src="assets/images/card-icon2.svg" alt="card icon">
+                  </div>
+                  <h5 class="card--box__title">Dedicated Desk</h5>
+                  <div class="card--box__text">Our coworking spaces are designed with collaboration in mind.</div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6 col-xs-12 m-auto">
+                <div class="card--box">
+                  <div class="icon--box yellow--light">
+                    <img src="assets/images/card-icon3.svg" alt="card icon">
+                  </div>
+                  <h5 class="card--box__title">Hot Desk</h5>
+                  <div class="card--box__text">Our coworking spaces are designed with collaboration in mind.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="display: flex; justify-content: center;">
+            <div class="button button--primary">View our services</div>
+          </div>
+        </div>
+      </section>
+      <section class="section p-60">
+        <div class="title--box mb-80">
+          <h4 class="title">
+            Working with the most trusted brands in the industry
+          </h4>
+        </div>
+        <div class="container container--small">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="partner">
+                <img src="assets/images/google.png" alt="partner images">
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="partner">
+                <img src="assets/images/netflix.png" alt="partner images">
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="partner">
+                <img src="assets/images/slack.png" alt="partner images">
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <div class="partner">
+                <img src="assets/images/intercom.png" alt="partner images">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section p-60">
+        <div class="container container--medium">
+          <div class="section__bg section__bg--light-alt pt-100 pb-100 pl-65 pr-65"  style="border-radius: 20px;">
+            <div class="row">
+              <div class="col-xl-4 col-md-12">
+                <div class="title--box">
+                  <h4 class="title" style="text-align: left;">
+                    Lockable office space for teams of all sizes
+                  </h4>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="lockable">
+                  <div class="icon--box purple" style="min-width: var(--size);">
+                    <img src="assets/images/lockable-icon1.svg" alt="icon image">
+                  </div>
+                  <div class="lockable__content">
+                    <h6>Office Membership</h6>
+                    <div class="content__text">
+                      Book a day pass for a seat in our coworking spaces with access to amenities.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-md-6">
+                <div class="lockable">
+                  <div class="icon--box blue" style="min-width: var(--size)";>
+                    <img src="assets/images/lockable-icon2.svg" alt="icon image">
+                  </div>
+                  <div class="lockable__content">
+                    <h6>Meeting Rooms</h6>
+                    <div class="content__text">
+                      Book a day pass for a seat in our coworking spaces with access to amenities.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section pt-60 pb-120">
+        <div class="container">
+          <div class="featured">
+            <div class="featured--left">
+              <div class="featured--left__img decor--box decor--box__bottom-left" style="--size: 90px; --color: var(--turquoise)">
+                <img src="assets/images/feature.png" alt="feature image">
+              </div>
+              <div class="featured--left__info">
+                <h5 class="info__title">229 West 36th Street. New York, USA.</h5>
+                <div class="info__price">From $49/mo</div>
+              </div>
+              <div class="featured--left__text text--secondary">We’re prioritising the health and safety of all members and employees in our spaces so you can continue working with peace of mind.</div>
+            </div>
+            <div class="featured--right">
+              <div class="title--box one--side mb-60">
+                <h3 class="title" style="text-align: left;">
+                  Featured office space locations
+                </h3>
+                <div class="subtitle text--secondary" style="text-align: left">
+                  Whether you’re an established enterprise or a scaling startup, find an office space that's right for you.
+                </div>
+              </div>
+              <a href="#" class="featured--right__link">View All Buildings<i class="fa-solid fa-arrow-right"></i></a>
+              <div class="featured--right__nav mt-100">
+                <div class="nav__btn">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <div class="nav__btn">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section p-120">
+        <div class="container">
+          <div class="office pt-110 pb-120">
+            <div class="title--box medium title--box__purple mb-70">
+              <h2 class="title">
+                <span>Office space </span>your way. Work wherever business takes you
+              </h2>
+              <div class="subtitle">
+                From a single desk to a whole building. The choice is yours
+              </div>
+            </div>
+            <div class="office--wrap">
+              <div class="slide--box decor--box decor--box__center-right pt-60 pl-100 pr-100 pb-40" style="--size: 70px; --color: var(--yellow);">
+                <div class="title--box one--side title--box__purple">
+                  <div class="slide--box__title text--secondary mb-30">Office Space</div>
+                  <h4 class="title" style="text-align: left;">
+                    Flexible workspace designed around your needs and comfort
+                  </h4>
+                  <div class="subtitle text--secondary mb-40" style="text-align: left;">
+                    Whether you need a single desk or a whole building, we provide office space that’s flexible to your needs and fully customisable. Available for a day, or as long as you need. 
+                  </div>
+                  <div class="slide--box__link mb-55">
+                    Learn More <i class="fa-solid fa-arrow-right"></i>
+                  </div>
+                  <div class="slide--box__nav">
+                    <div class="nav__item active"></div>
+                    <div class="nav__item"></div>
+                    <div class="nav__item"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="office--right">
+                <div class="office__img">
+                  <img src="assets/images/office-img1.png" alt="office images">
+                </div>
+                <div class="office__img decor--box decor--box__bottom-right" style="--size: 90px";>
+                  <img src="assets/images/office-img2.png" alt="office images">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section__bg section__bg--full section__bg--light-alt"></div>
+      </section>
+      <section class="section pt-120 pb-120">
+        <div class="container">
+          <div class="title--box large title--box__purple mb-70">
+            <h3 class="title" style="max-width: inherit;">
+              With over <span>3,000 locations</span> globally we have offices,  and meeting rooms in every major city
+            </h3>
+          </div>
+          <div class="location">
+            <div class="img--box">
+              <div class="img--box__image  decor--box decor--box__bottom-left" style="--size: 80px">
+                <img src="assets/images/home-image1.png" alt="image box">
+              </div>
+              <div class="img--box__title">New York</div>
+            </div>
+            <div class="img--box">
+              <div class="img--box__image">
+                <img src="assets/images/home-image2.png" alt="image box">
+              </div>
+              <div class="img--box__title">Miami</div>
+            </div>
+            <div class="img--box">
+              <div class="img--box__image">
+                <img src="assets/images/home-image3.png" alt="image box">
+              </div>
+              <div class="img--box__title">San Francisco</div>
+            </div>
+            <div class="img--box">
+              <div class="img--box__image">
+                <img src="assets/images/home-image4.png" alt="image box">
+              </div>
+              <div class="img--box__title">Los Angeles</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section pt-120 pb-120">
+        <div class="container">
+          <div class="title--box small title--box__purple mb-100">
+            <h2 class="title">
+              Set up your office, pick a plan later
+            </h2>
+            <div class="subtitle">
+              Try Shopify free for 14 days, no credit card required
+            </div>
+          </div>
+          <div class="price">
+            <div class="price--wrap">
+              <div class="price__item">
+                <div class="item__title text--secondary">
+                  Monthly
+                </div>
+                <div class="item__toggle">
+                  <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                  </label>
+                </div>
+              </div>
+              <div class="price__item">
+                <div class="item__title text--secondary">
+                  Yearly
+                </div>
+                <div class="item__sale text--secondary">
+                  Save 20%
+                </div>
+              </div>
+            </div>
+            <div class="row mt-100">
+              <div class="col-sm-6 col-xs-12">
+                <div class="price--box">
+                  <div class="price--box__subtitle">
+                    Freelance
+                  </div>
+                  <div class="price--box__title">
+                    $ <span>19</span>/mo
+                  </div>
+                  <div class="price--box__text text--secondary">
+                    Best for new startups or businesses with occasional in-person sales
+                  </div>
+                  <div class="price--box__services">
+                    <div class="services__item">
+                      <div class="check">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <div class="content">Fully-furnished and serviced</div>
+                    </div>
+                    <div class="services__item">
+                      <div class="check">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <div class="content">Access  break-out areas</div>
+                    </div>
+                    <div class="services__item">
+                      <div class="check">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <div class="content">Thousands of locations</div>
+                    </div>
+                    <div class="services__item">
+                      <div class="check">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <div class="content">Global transport hubs</div>
+                    </div>
+                    <div class="services__item">
+                      <div class="check">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <div class="content">24/7 Support Online</div>
+                    </div>
+                  </div>
+                  <div class="button button--primary button--full">Start your free trial</div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-xs-12">
+                <div class="price--box">
+                  <div class="price--box__subtitle">
+                    Freelance
+                  </div>
+                  <div class="price--box__title">
+                    $ <span>49</span>/mo
+                  </div>
+                  <div class="price--box__text text--secondary">
+                    Best for new startups or businesses with occasional in-person sales
+                  </div>
+                  <div class="price--box__services">
+                    <div class="services__item">
+                      <div class="check">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <div class="content">Fully-furnished and serviced</div>
+                    </div>
+                    <div class="services__item">
+                      <div class="check">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <div class="content">Access  break-out areas</div>
+                    </div>
+                    <div class="services__item">
+                      <div class="check">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <div class="content">Thousands of locations</div>
+                    </div>
+                    <div class="services__item">
+                      <div class="check">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <div class="content">Global transport hubs</div>
+                    </div>
+                    <div class="services__item">
+                      <div class="check">
+                        <i class="fa-solid fa-check"></i>
+                      </div>
+                      <div class="content">24/7 Support Online</div>
+                    </div>
+                  </div>
+                  <div class="button button--primary button--full">Start your free trial</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="workspace pt-120">
+            <div class="title--box large title--box__purple mb-90">
+              <h2 class="title">
+                Find your perfect <span>workspace.</span>
+              </h2>
+              <div class="subtitle" style="font-family: 'Outfit', san-serif; max-width: 630px;">
+                Whether you’re a team of one, a growing startup or a Fortune 500 company – we have flexible solutions for all the ways you work.
+              </div>
+            </div>
+            <div class="workspace__btn">
+              <div class="button button--primary">Talk to an expert</div>
+            </div>
+          </div>
+        </div>
+        <div class="section__bg section__bg--full section__bg--light-alt section__bg--part"></div>
+      </section>
+      <section class="section pt-120 pb-120">
+        <div class="container">
+          <div class="title--box small title--box__purple mb-70">
+            <h2 class="title">
+              What our clients are saying about us
+            </h2>
+            <div class="subtitle">
+              Customer satisfaction is a primary goal for our company
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 col-sm-6">
+              <div class="testimonial--box decor--box decor--box__top-left" style="--size: 70px;">
+                <div class="testimonial--box__image">
+                  <img src="assets/images/testimonial1.png" alt="testimonial image">
+                </div>
+                <h5 class="testimonial--box__name">
+                  Monica Smith
+                </h5>
+                <div class="testimonial--box__position text--secondary">
+                  Web Designer
+                </div>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="testimonial--box__text text--secondary">Overall experience is awesome!! I'm a visual thinker, and I couldn't function without an office like this.</div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+              <div class="testimonial--box">
+                <div class="testimonial--box__image">
+                  <img src="assets/images/testimonial2.png" alt="testimonial image">
+                </div>
+                <h5 class="testimonial--box__name">
+                  Vincent Smith
+                </h5>
+                <div class="testimonial--box__position text--secondary">
+                  Web Designer
+                </div>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="testimonial--box__text text--secondary">Overall experience is awesome!! I'm a visual thinker, and I couldn't function without an office like this.</div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 m-auto">
+              <div class="testimonial--box">
+                <div class="testimonial--box__image">
+                  <img src="assets/images/testimonial3.png" alt="testimonial image">
+                </div>
+                <h5 class="testimonial--box__name">
+                  Stella Smith
+                </h5>
+                <div class="testimonial--box__position text--secondary">
+                  Web Designer
+                </div>
+                <div class="star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="testimonial--box__text text--secondary">Overall experience is awesome!! I'm a visual thinker, and I couldn't function without an office like this.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section__bg section__bg--full section__bg--light-alt"></div>
+      </section>
+    </div>
+    <footer class="footer pt-100">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-xs-6 m-auto">
+            <div class="logo">
+              <img src="assets/images/Logo-footer.png" alt="logo image">
+            </div>
+          </div>
+          <div class="col-lg-2 col-xs-6 m-auto">
+            <div class="footer__col">
+              <h5 class="col__title">
+                Company
+              </h5>
+              <a href="#" class="col__link">About</a>
+              <a href="#" class="col__link">Work</a>
+              <a href="#" class="col__link">Careers</a>
+              <a href="#" class="col__link">Pricing</a>
+              <a href="#" class="col__link">Blog</a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-xs-6 m-auto">
+            <div class="footer__col">
+              <h5 class="col__title">
+                Services
+              </h5>
+              <a href="#" class="col__link">Branding</a>
+              <a href="#" class="col__link">Websites</a>
+              <a href="#" class="col__link">Development</a>
+              <a href="#" class="col__link">Strategy</a>
+              <a href="#" class="col__link">Platforms</a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-xs-6 m-auto">
+            <div class="footer__col">
+              <h5 class="col__title">
+                Contact
+              </h5>
+              <a href="#" class="col__link">Help Desk</a>
+              <a href="#" class="col__link">Docs</a>
+              <a href="#" class="col__link">Open a Ticket</a>
+              <a href="#" class="col__link">Chat</a>
+              <a href="#" class="col__link">Forum</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-xs-12 m-auto">
+            <div class="footer__col">
+              <h5 class="col__title">
+                Newsletter
+              </h5>
+              <div class="footer__text">
+                Subscribe to our newsletter to keep up to date on our marketing, website, design services, and tips.
+              </div>
+              <form class="footer__input">
+                <input type="text" placeholder="Enter email">
+                <input type="submit" value="Submit" class="button button--secondary"></input>
+              </form>
+              <div class="footer__text">
+                We hate spam as much as you do. We will never, ever send you such emails. 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="line mt-100"></div>
+        <div class="footer--bottom pt-30 pb-30">
+          <div class="footer__text">© 2022 Pollock LLC. All Rights Reserved. Terms & Conditions. Privacy Policy.</div>
+          <div class="footer__social">
+            <div class="social__item">
+              <i class="fa-brands fa-facebook-f"></i>
+            </div>
+            <div class="social__item">
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+            <div class="social__item">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- js -->
+  <script src="./js/script.js"></script>
+</body>
+</html>

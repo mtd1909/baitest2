@@ -1,0 +1,39 @@
+.button {
+  font-weight: 500;
+  color: $colorWhite;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+  display: inline-block;
+  background-color: $colorPrimary;
+  text-transform: uppercase;
+  &:hover {
+    opacity: 0.8;
+  }
+  &.button--primary {
+    min-width: 129px;
+    padding: 18px 32px;
+    border-radius: 10px;
+    font-size: 15px;
+  }
+  &.button--secondary {
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 13px 30px;
+  }
+  &.button--green {
+    background-color: #20E5A7;
+    padding: 11px 14px;
+  }
+  &.button--gray {
+    background-color: $colorTextGray;
+    color: $colorText;
+  }
+  &.button--purple {
+    background-color: $colorPurple;
+  }
+  &.button--full {
+    display: block;
+    border-radius: 0 0 10px 10px;
+  }
+}

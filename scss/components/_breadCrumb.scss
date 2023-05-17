@@ -1,0 +1,16 @@
+.bread--crumb {
+  text-align: center;
+  .bread--crumb__title {
+    margin-bottom: 21px;
+    font-weight: 500;
+  }
+  .bread--crumb__link {
+    font-size: 15px;
+    font-weight: 500;
+    color: $colorTitle;
+    text-transform: uppercase;
+    span {
+      color: $colorText;
+    }
+  }
+}

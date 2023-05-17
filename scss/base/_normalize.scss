@@ -1,0 +1,99 @@
+.wrapper {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+}
+
+button {
+  font-family: $fontPrimary;
+  border: none;
+}
+
+.header__overlay {
+  transition: all 0.5s ease;
+  &.show-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #333;
+    z-index: 2;
+    opacity: 0.5;
+  }
+}
+
+select {
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid $colorTextGray;
+  padding-left: 20px;
+  font-size: 16px;
+  font-family: $fontSecondary;
+  height: 48px;
+  width: 100%;
+}
+
+.purple--light {
+  background-color: $colorPurpleLight;
+}
+.blue--light {
+  background-color: $colorBlueLight;
+}
+.yellow--light {
+  background-color: $colorYellowLight;
+}
+
+.green {
+  background-color: $colorGreen;
+}
+.red {
+  background-color: $colorRed;
+}
+.yellow {
+  background-color: $colorYellow;
+}
+.pink {
+  background-color: $colorPink;
+}
+.blue {
+  background-color: $colorBlue;
+}
+.orange {
+  background-color: $colorOrange;
+}
+.purple {
+  background-color: $colorPurple;
+}
+.dark--blue {
+  background-color: $colorDarkBlue;
+}
+.turquoise {
+  background-color: $colorTurquoise;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translate3d(0,-100%,0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}

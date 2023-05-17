@@ -1,0 +1,55 @@
+.slide--box {
+  background-color: $colorWhite;
+  border-radius: 20px;
+  box-shadow: $shadowBig;
+  width: 570px;
+  @media (max-width: 991px) {
+    width: 100%;
+  }
+  .one--side {
+    @media (max-width: 991px) {
+      max-width: unset;
+      .subtitle {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: unset;
+      }
+    }
+  }
+  .slide--box__title {
+    color: $colorBlue;
+    font-size: 18px;
+  }
+  .slide--box__link {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    i {
+      margin-left: 5px;
+    }
+  }
+  .slide--box__nav {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    .nav__item {
+      width: 40px;
+      height: 5px;
+      border-radius: 20px;
+      background-color: $colorTextGray;
+      position: relative;
+      &.active {
+        &:before {
+          position: absolute;
+          content: '';
+          width: 20px;
+          height: 100%;
+          left: 0;
+          top: 0;
+          background-color: $colorBlue;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.img--box {
+  margin: 5px 0;
+  @media (max-width: 1199px) {
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .img--box__title {
+    margin-top: 30px;
+    font-size: 22px;
+    color: $colorPrimary;
+    @media (max-width: 991px) {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  }
+}

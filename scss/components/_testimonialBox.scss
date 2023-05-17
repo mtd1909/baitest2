@@ -1,0 +1,32 @@
+.testimonial--box {
+  border-radius: 20px;
+  background-color: $colorWhite; 
+  padding: 35px;
+  text-align: center;
+  @media (max-width: 767px) {
+    padding: 20px;
+  }
+  .testimonial--box__image {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    img {
+      border-radius: 50%;
+    }
+  }
+  .testimonial--box__position {
+    margin-bottom: 20px;
+  }
+  .testimonial--box__react {
+    color: $colorTitle;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  .testimonial--box__text {
+    margin-top: 30px;
+    @media (max-width: 767px) {
+      margin-top: 10px;
+    }
+  }
+}

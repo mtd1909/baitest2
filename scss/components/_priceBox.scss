@@ -1,0 +1,74 @@
+.price--box {
+  padding: 35px 100px 0 100px;
+  background-color: $colorWhite;
+  border: 1px solid $colorLineGray;
+  border-radius: 10px;
+  @media (max-width: 991px) {
+    padding: 35px 60px 0 60px;
+  }
+  @media (max-width: 767px) {
+    padding: 20px 30px 0 30px;
+  }
+  @media (max-width: 575px) {
+    margin: 0 auto;
+  }
+  .price--box__subtitle {
+    color: $colorPrimary;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  .price--box__title {
+    font-size: 36px;
+    font-weight: 500;
+    color: $colorTitle;
+    text-align: center;
+    margin-bottom: 5px;
+    span {
+      font-size: 64px;
+    }
+  }
+  .price--box__text {
+    text-align: center;
+    max-width: 323px;
+    margin-bottom: 40px;
+    @media (max-width: 575px) {
+      max-width: unset;
+    }
+  }
+  .price--box__services {
+    margin-top: -10px;
+    margin-bottom: 50px;
+    @media (max-width: 767px) {
+      margin-bottom: 20px;
+    }
+    .services__item {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin: 10px 0;
+      .check {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(79, 119, 255, 0.1);
+        i {
+          color: $colorPrimary;
+        }
+      }
+    }
+  }
+  .button {
+    margin: 0 -100px;
+    @media (max-width: 991px) {
+      margin: 0 -60px;
+    }
+    @media (max-width: 767px) {
+      margin: 0 -30px;
+    }
+  }
+}

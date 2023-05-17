@@ -1,0 +1,97 @@
+.blog--large {
+  border: 1px solid $colorLineGray;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  &.details {
+    margin-bottom: 0;
+    border: none;
+    .content__description {
+      color: $colorTitle;
+    }
+    .content__text {
+      font-family: $fontSecondary;
+      a {
+        color: $colorPrimary;
+      }
+    }
+    .content__qoute {
+      padding: 30px 50px 35px 50px;
+      background-color: $colorBgLight;
+      color: $colorTitle;
+      @media (max-width: 767px) {
+        padding: 20px;
+      }
+    }
+    .content__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid $colorLineGray;
+      padding-bottom: 20px;
+      .footer__social {
+        display: flex;
+        gap: 15px;
+        cursor: pointer;
+        i {
+          font-size: 20px;
+        }
+      }
+    }
+    .blog--large__content {
+      padding-bottom: 0;
+    }
+  }
+  .blog--large__img {
+    img {
+      @media (max-width: 991px) {
+        width: 100%;
+      }
+    }
+  }
+  .blog--large__content {
+    padding: 25px 40px 40px 40px;
+    @media (max-width: 767px) {
+      padding: 20px;
+    }
+    .content__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 30px;
+      .header__author {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        .author__name {
+          font-weight: 15px;
+          font-weight: 500;
+          text-transform: uppercase;
+        }
+      }
+      .header__time {
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.4px;
+      }
+    }
+    .content__title {
+      font-weight: 500;
+    }
+    .content__description {
+      font-family: $fontSecondary;
+      margin-top: 30px;
+      @media (max-width: 767px) {
+        margin-top: 20px;
+      }
+      &.subtitle {
+        color: $colorTitle;
+      }
+    }
+    .button {
+      margin-top: 40px;
+      @media (max-width: 767px) {
+        margin-top: 20px;
+      }
+    }
+  }
+}
