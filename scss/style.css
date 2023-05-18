@@ -1322,6 +1322,39 @@ input[type=submit] {
   outline: none;
 }
 
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label {
+  background-color: #ddd;
+  width: 15px;
+  height: 15px;
+}
+
+input[type=checkbox]:checked + label {
+  background-color: #292F32;
+  color: #fff;
+  position: relative;
+}
+
+input[type=checkbox] + label:after {
+  content: "\f00c";
+  font-family: "Font Awesome 6 Pro";
+  color: #fff;
+  position: absolute;
+  font-size: 10px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
 ::-moz-placeholder {
   font-family: "DM Sans", san-serif;
   color: #7B88A8;
@@ -1436,6 +1469,7 @@ input[type=submit] {
 .shop--sidebar .shop--sidebar__box .box__choose .choose__input {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 .shop--sidebar .shop--sidebar__box .box__choose .choose__input .title {
   font-size: 14px;
@@ -1446,7 +1480,7 @@ input[type=submit] {
   padding-left: 30px;
 }
 .shop--sidebar .shop--sidebar__box .box__price .price__bar {
-  width: 100%;
+  width: calc(100% - 20px);
   height: 2px;
   background-color: #E7E5EA;
   position: relative;
