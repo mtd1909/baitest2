@@ -62,7 +62,7 @@
   margin: 0;
 }
 
-.title--box__nav {
+.title--box__flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -70,11 +70,11 @@
     margin-left: 0;
     margin-right: 0;
   }
-  .nav--title {
+  .flex--title {
     display: flex;
     gap: 12px;
     align-items: center;
-    .nav--title__item {
+    .flex--title__item {
       width: 56px;
       height: 40px;
       border-radius: 20px;

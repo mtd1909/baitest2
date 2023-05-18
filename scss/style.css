@@ -177,6 +177,8 @@ select {
   outline: none;
   border: 1px solid #E7E5EA;
   padding-left: 20px;
+  padding-right: 20px;
+  color: #7B88A8;
   font-size: 16px;
   font-family: "DM Sans", san-serif;
   height: 48px;
@@ -909,21 +911,21 @@ select {
   margin: 0;
 }
 
-.title--box__nav {
+.title--box__flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.title--box__nav .title {
+.title--box__flex .title {
   margin-left: 0;
   margin-right: 0;
 }
-.title--box__nav .nav--title {
+.title--box__flex .flex--title {
   display: flex;
   gap: 12px;
   align-items: center;
 }
-.title--box__nav .nav--title .nav--title__item {
+.title--box__flex .flex--title .flex--title__item {
   width: 56px;
   height: 40px;
   border-radius: 20px;
@@ -933,11 +935,11 @@ select {
   align-items: center;
   cursor: pointer;
 }
-.title--box__nav .nav--title .nav--title__item.active {
+.title--box__flex .flex--title .flex--title__item.active {
   border: none;
   background-color: #4F77FF;
 }
-.title--box__nav .nav--title .nav--title__item.active i {
+.title--box__flex .flex--title .flex--title__item.active i {
   color: #ffffff;
 }
 
@@ -1413,6 +1415,94 @@ input[type=submit] {
   margin-right: 5px;
 }
 
+.shop--sidebar .shop--sidebar__box {
+  margin-bottom: 20px;
+}
+.shop--sidebar .shop--sidebar__box .box__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #E7E5EA;
+}
+.shop--sidebar .shop--sidebar__box .box__choose {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.shop--sidebar .shop--sidebar__box .box__choose .choose__input {
+  display: flex;
+  gap: 10px;
+}
+.shop--sidebar .shop--sidebar__box .box__choose .choose__input .title {
+  font-size: 14px;
+  font-family: "DM Sans", san-serif;
+  color: #333;
+}
+.shop--sidebar .shop--sidebar__box .box__choose.box__subtitle {
+  padding-left: 30px;
+}
+.shop--sidebar .shop--sidebar__box .box__price .price__bar {
+  width: 100%;
+  height: 2px;
+  background-color: #E7E5EA;
+  position: relative;
+}
+.shop--sidebar .shop--sidebar__box .box__price .price__bar:before {
+  content: "";
+  position: absolute;
+  width: calc(100% - 20px);
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: #4F77FF;
+}
+.shop--sidebar .shop--sidebar__box .box__price .price__bar .bar__dots {
+  position: absolute;
+  top: 5px;
+  font-size: 14px;
+  color: #333;
+}
+.shop--sidebar .shop--sidebar__box .box__price .price__bar .bar__dots:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4F77FF;
+}
+.shop--sidebar .shop--sidebar__box .box__price .price__bar .bar__dots.bar__start {
+  left: 0;
+}
+.shop--sidebar .shop--sidebar__box .box__price .price__bar .bar__dots.bar__end {
+  right: -25px;
+}
+.shop--sidebar .shop--sidebar__box .box__filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .shop--sidebar .shop--sidebar__box .box__filter {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+.shop--sidebar .shop--sidebar__box .box__filter .filter__item {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.shop--sidebar .shop--sidebar__box .box__filter .filter__item:last-child {
+  color: #4F77FF;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -1654,6 +1744,10 @@ input[type=submit] {
 
 .pb-30 {
   padding-bottom: 30px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
 }
 
 .pt-30 {
@@ -1901,12 +1995,20 @@ input[type=submit] {
   margin-top: 20px;
 }
 
+.mb-20 {
+  margin-bottom: 20px;
+}
+
 .mt-30 {
   margin-top: 30px;
 }
 
 .mb-30 {
   margin-bottom: 30px;
+}
+
+.mt-40 {
+  margin-top: 40px;
 }
 
 .mb-40 {
@@ -1929,6 +2031,20 @@ input[type=submit] {
 @media (max-width: 767px) {
   .mb-55 {
     margin-bottom: 20px;
+  }
+}
+
+.mt-50 {
+  margin-top: 50px;
+}
+@media (max-width: 991px) {
+  .mt-50 {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .mt-50 {
+    margin-top: 20px;
   }
 }
 
